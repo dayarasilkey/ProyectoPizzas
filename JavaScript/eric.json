@@ -1,0 +1,12 @@
+{
+    "id":1,
+    "titulo":"viernes 13",
+    "Genero":"terror",
+    "año":"1980",
+    "record":"4.9",
+    "director":{
+        "primer_nombre":"erik",
+        "segundo_nombre":"cantor",
+        "edad":"19"
+    }
+}

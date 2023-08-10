@@ -1,5 +1,5 @@
 :root {
-    --rojizo: rgb(255, 255, 255);
+    --rojizo: rgb(0, 0, 0);
     --wine-color: rgb(94, 94, 94);
     --negro-cajas: rgb(0, 0, 0);
     --blanco: white;
@@ -11,82 +11,7 @@
     --ingresar: #E7E900; 
     --borrar: #00e94e;
     --form-color: rgba(237, 240, 236, 0.527);
-    --fondo: rgb(33, 3, 88);
 }
-  /* Estilos para pantallas más pequeñas, como teléfonos móviles */
-  @media screen and (max-width: 500px) {
-    /* Modifica aquí los estilos que deben ajustarse para teléfonos móviles */
-    /* Por ejemplo, podrías ajustar el tamaño del logotipo, el tamaño de fuente y el espaciado */
-    
-    nav {
-      font-size: 10px;
-     display: flex;
-      flex-direction: column; 
-      align-items: center;
-      justify-content: center;/* Para que los elementos aparezcan uno debajo del otro */
-    }
-    
-    nav a {
-      padding: 1.5em 0; /* Aumenta el espaciado entre los elementos del menú */
-    }
-   
-   
-    input{
-        width: 80%;
-        padding: 0.5em;
-        border: rgb(148, 148, 148) 1px solid;
-        border-radius: 0.8em;
-    }
-   
-    .header {
-      height: 2000px;
-      background-color: var(--fondo);
-      font-size: large;
-      display: flex;
-      flex-direction: column; 
-      align-items: center;
-      justify-content: center;
-    }
-     
-    
-    
-   
-    
-    
-      div.ingreso {
-        width: 100%;
-        height: 100%;
-		background: var(--blanco);
-		text-align: center;
-       
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: center;
-	}
-    header .lelel{
-      
-        font-size: 2rem; 
-        font-weight: bold;
-        text-decoration: none;
-       
-      
-        color: rgb(255, 255, 255);
-       
-      }
-    }
-    .lelel{
-      
-        font-size: 5rem; 
-        font-weight: bold;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-       
-      }
-     
-
-    
 
 html {
     font-size: 62.5%;
@@ -96,7 +21,7 @@ html {
     height: 120px;
 }
 body {
-    background:linear-gradient(rgba(245, 46, 219, 0.925),rgba(34, 1, 71, 0.979));
+    background:linear-gradient(rgba(46, 245, 185, 0.925),rgba(10, 10, 10, 0.979));
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI Light';
@@ -107,14 +32,18 @@ body {
 /*ELEMENTOS DEL HEADER*/
 
 header {
-    height: 200px;
-    background-color: var(--fondo);
-    font-size: large;
+    background-color: var(--hover);
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-
+#logo-caja {
+    width: 35%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
 
 #logo-pizza {
     width: 25%;
@@ -206,8 +135,6 @@ nav a:hover {
         border-radius: 2em;
 	}
 
-
-
 	div.form p, .form label {
 		display: block;
 		margin-right: 6%;
@@ -219,14 +146,9 @@ nav a:hover {
 		color: var(--rojizo);
         font-size: var(--tamaño-fuente);
 	}
-    
-.catrina{
-    border: 10px solid black;
-    background-color: hsl(281, 94%, 80%);
-   
-}
+
     .container{
-        
+       
         font-size: 2.5rem;
         padding-left: 10%;
         padding-right: 10%;
@@ -297,9 +219,9 @@ nav a:hover {
 	    background-color: var(--wine-color);
   	}
 
-      input {
+    input {
         padding: 0.5em;
-        border: grey 1px solid;
+        border: grey 0.1em solid;
         border-radius: 0.8em;
     }
 
@@ -310,8 +232,7 @@ nav a:hover {
 	    font-size: 1.7em;
 	    color: var(--blanco);
 	    background-color: var(--ingresar);
-	    border-radius: 0.5em;	
-        margin-bottom: 10px;	
+	    border-radius: 0.5em;		
   	}
 
   	input.borrar {

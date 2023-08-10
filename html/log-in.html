@@ -8,41 +8,54 @@
     <title>Bebidas - MetroPizza</title>
     <link rel="stylesheet" href="../CSS/log-in.css">
 </head>
+
+<script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+      event.preventDefault();  // Evita el envío del formulario predeterminado
+  
+      // Redirige a la página "nosotros.html"
+      window.location.href = "nosotros.html";
+    });
+  </script>
 <body>
+    
     <!-- ENCABEZADO DE LA PAGINA -->
     <header>
-        <a href="../index.html" id="logo-caja"><img id="logo-pizza" src="https://ahome.guialis.com.mx/uploads/mx/orig/0077042112_metro-pizza-logo.jpg"></a>
+        <div class="user-elements">
+            <a href="../nosotros.html" id="logo-caja"><img  src="../ICONS/aleo.png" class="img"></a>
+        </div>
+        <div class="user-elements">
+            <a class="lelel">ALIMASCOTAS</a>
+        </div>
         <div class="user-elements">
             <a id="log-in">¡Bienvenido! Disfrutemos juntos de las delicias de MetroPizza.</a>
         </div>
+        
     </header>
-    <div class="linea-header"></div>
+   
+   
 
     <!-- LINEA DE NAVEGACION O MENU -->
     <nav>
-        <a href="../index.html#ofertas-contenido">Ofertas Semanales</a>
-        <a href="pizzas.html">Menú Pizzas</a>
-        <a href="adicionales.html">Adicionales</a>
-        <a href="bebidas.html">Bebidas</a>
-        <a href="postres.html">Postres</a>
+        <a href="log-in.html">loguin</a>
+        <a href="nosotros.html">nosotros </a>
+        
     </nav>
-
+    
     <!-- FORMULARIO DE INGRESO -->
     <div class="ingreso">
 			<div class="form">
-				<form class="ingresa">
+				<form class="ingresa"   id="myForm" action="listarU.html"  onsubmit="return validateForm()">
 					<h1>Ingresar</h1><br>
-					<a href="https://www.facebook.com/" class="btfacebook">Ingresar con Facebook</a><br><br><br>
-					<a href="https://accounts.google.com/" class="btgmail">Ingresa con Gmail</a><br><br>
-					<p>o Ingresar con</p>
-					<div class="email">
-						<label>Correo Electronico</label>
-						<input type="email" placeholder="Ingresa tu e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+/.[a-z]{2,}$"required><br><br>
+					
+                    <div class="email">
+						<label>Documento</label>
+						<input type="int" placeholder="Ingresa tu cedula" id="Documento" required><br><br>
 						<label>Contraseña</label>
-						<input type="password" name="contraseña" placeholder="Ingrese su contraseña">
+						<input type="password" name="contraseña"id="contraseña"placeholder="Ingrese su contraseña">
 						<br><br>
-						<input type="submit" name="Ingresar" value="Ingresar" class="ingresar">
-						<input type="reset" name="Borrar" class="borrar"><br><br>
+						<input type="submit" name="Ingresar" value="Enviar" class="ingresar">
+						<input type="reset" name="Borrar" class="borrar" ><br><br>
 					</div>
 				</form>
 			</div>
@@ -58,7 +71,7 @@
                 <circle cx="12" cy="12" r="9" />
                 <path d="M14.5 9a3.5 4 0 1 0 0 6" />
             </svg>
-            <p>MetroPizza - Diseño Web: Yulieth Jimenez</p>
+            <p>ALIMASCOTA L - Diseño Web: Leonardo Aguirre</p>
         </div>
         <div class="redes-sociales">
             <a href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">

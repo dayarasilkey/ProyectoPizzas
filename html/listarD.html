@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/log-in.css">
+     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Dispositivo</title>
+</head>
+<body>
+    <header>
+    
+        <a href="../index.html" id="logo-caja"><img src="aleo.png" class="img"></a>
+        <div class="user-elements">
+            <a id="log-in">¡Bienvenido! Disfrutemos juntos de las delicias de la vida.</a>
+        </div>
+    </header>
+   <br>
+
+    <!-- LINEA DE NAVEGACION O MENU -->
+    <nav>
+        <a href="log-in.html">Log in</a>
+        <a href="nosotros.html">Nosotros </a>
+        <a href="Rmascotas.html">Agregar Mascota</a>
+        <a href="listarU.html">Mostrar Usuarios </a>
+        
+    </nav>
+    <br>
+     
+    <br><br>
+    <div class="container">
+       
+        <button id="listar"  class="btn btn-dark">Listar Dispositivo</button>
+</div>
+    <br>
+    <br><br><br>
+    <h2 class="clara">Buscar Dispositivo</h2>
+    <br>
+    <div class="container">
+        <form>
+            <label for="txtBuscarPlaca" class="la">Número de ID:</label>
+            <input type="text" class="form-control" id="txtBuscarPlaca" placeholder="Ingrese el número de ID">
+            <button type="button" class="btn btn-dark" id="btnBuscarMascota">Buscar</button>
+        </form>
+    </div>
+            <br>
+   
+            <div class="container">
+                <h2 class="clara">Lista de Dispositivos agregados</h2>
+                <table class="table table-dark" >
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>color</th>
+                        <th>tamaño</th>
+                        <th>num_plac</th>
+                        <th>Acciones</th>
+                       
+                    </tr>
+                </thead>
+                <tbody id="UsuariosTabla">
+                    
+                </tbody>
+            </table>
+            </div>
+        
+       
+        
+        
+        
+            <script src="EnviarD.js"></script>
+            
+        </tbody>
+    </table>
+    </div>
+
+<br><br>
+<br><br>
+<br><br>
+    <!-- PIE DE PAGINA -->
+    <footer class="footer">
+        <div class="derechos">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="12" cy="12" r="9" />
+                <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+            </svg>
+            <p>ALIMASCOTA L - Diseño Web: Leonardo Aguirre</p>
+        </div>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+            </svg></a>
+            <a href="https://web.whatsapp.com/"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+            </svg></a>
+            <a href="https://www.instagram.com/"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <rect x="4" y="4" width="16" height="16" rx="4" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+            </svg></a>
+            <a href="https://www.google.com/intl/es-419/gmail/about/"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-gmail" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M16 20h3a1 1 0 0 0 1 -1v-14a1 1 0 0 0 -1 -1h-3v16z" />
+                <path d="M5 20h3v-16h-3a1 1 0 0 0 -1 1v14a1 1 0 0 0 1 1z" />
+                <path d="M16 4l-4 4l-4 -4" />
+                <path d="M4 6.5l8 7.5l8 -7.5" />
+            </svg></a>
+        </div>
+    </footer>
+</body>
+</html>

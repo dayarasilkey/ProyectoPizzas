@@ -1,0 +1,32 @@
+
+[
+
+    {
+        "id": 1 ,
+        "nombre":"juan",
+        "Pais":"Colombia",
+        "fecha":"1996-03-18",
+        "Correo":"juancho@gmail.com"
+    },{
+        "id": 2 ,
+        "nombre":"Maria",
+        "Pais":"Mexico",
+        "fecha":"1980-05-01",
+        "Correo":"maria@gmail.com"
+    
+    },{
+        "id": 3,
+        "nombre":"Pedro",
+        "Pais":"Brasil",
+        "fecha":"2000-09-06",
+        "Correo":"Pedro@gmail.com"
+    },{
+    
+        "id": 4 ,
+        "nombre":"Luisa",
+        "Pais":"Colombia",
+        "fecha":"2001-11-21",
+        "Correo":"juancho@gmail.com"
+    }
+    
+    ]

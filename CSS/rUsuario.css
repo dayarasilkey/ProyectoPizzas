@@ -1,0 +1,657 @@
+:root {
+    --rojizo: rgb(255, 255, 255);
+    --wine-color: rgb(7, 7, 7);
+    --negro-cajas: rgb(0, 0, 0);
+    --blanco: white;
+    --amarillo: rgba(140, 13, 179, 0.699);
+    --tamaño-fuente: 1.8em;
+    --negro-transparente: rgba(10, 10, 10, 0.425);
+    --amarillo-fondo: rgb(209, 124, 212);
+    --fondo: rgb(33, 3, 88);
+}
+/* Estilos generales aquí */
+
+
+  
+  /* Estilos para pantallas más pequeñas, como teléfonos móviles */
+  @media screen and (max-width: 500px) {
+    /* Modifica aquí los estilos que deben ajustarse para teléfonos móviles */
+    /* Por ejemplo, podrías ajustar el tamaño del logotipo, el tamaño de fuente y el espaciado */
+    
+    nav {
+      font-size: 10px;
+     display: flex;
+      flex-direction: column; 
+      align-items: center;
+      justify-content: center;/* Para que los elementos aparezcan uno debajo del otro */
+    }
+    
+    nav a {
+      padding: 1.5em 0; /* Aumenta el espaciado entre los elementos del menú */
+    }
+   
+    .casos, .somos {
+      flex-direction: column; /* Para que los elementos aparezcan uno debajo del otro */
+    }
+
+   
+    .header {
+      height: 2000px;
+      background-color: var(--fondo);
+      font-size: large;
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      justify-content: center;
+    }
+     
+    
+    
+   
+    
+    
+    .user-elements {
+     
+    display: flex;
+    flex-direction: column;
+    margin: 1%; /* Ajusta el margen para que el texto no ocupe demasiado espacio */
+    font-size: 30px; 
+    color: var(--rojizo);
+    }
+
+   
+    .casos {
+      flex-direction: column;
+      height: 100%; /* Ajusta la altura automáticamente para que el contenido no se desborde */
+      margin-top: 100%; 
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      justify-content: center;/* Agrega un espacio entre los elementos */
+    }
+    
+    .casos p {
+      margin: 3%; /* Ajusta el margen para que el texto no ocupe demasiado espacio */
+      font-size: 1.5rem; 
+    }
+  
+    .somos {
+      flex-direction: column;
+      height: auto; /* Ajusta la altura automáticamente para que el contenido no se desborde */
+      margin-top: 5%; 
+      display: flex;
+      flex-direction: column; 
+      -ms-flex-align: center; 
+   
+    }
+ 
+    .somos p {
+     /* Ajusta el margen para que el texto no ocupe demasiado espacio */
+      font-size: 2 rem; 
+      
+    }
+  
+    .A, .B, .C, .D {
+      width: 90%; /* Reduce el ancho de los elementos */
+      height: 100px;
+      margin: 1% auto; /* Centra los elementos en la pantalla */
+      font-size: 1px;
+    }
+  
+    .A h2, .B h2, .C h2, .D h2 {
+      font-size: 1.5rem; /* Ajusta el tamaño de los títulos para que quepan en pantallas más pequeñas */
+    }
+    .catrina{
+        width:90%   ;
+        height: 600;
+       margin: auto;
+	
+        margin-top: 1%;
+        margin-bottom: 10%;
+        border: 10px solid black;
+        background-color: hsl(281, 94%, 80%);
+       
+    }
+   
+  }
+  .lelel{
+      
+    font-size: 5rem; 
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+   
+  }
+ 
+  body {
+    background:linear-gradient(rgba(255, 255, 255, 0.925),rgba(34, 1, 71, 0.979));
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI Light';
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+    .container{
+    
+        font-size: 2.5rem;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .catrina{
+        width:90%   ;
+        height: 70
+        0;
+       margin: auto;
+	
+        margin-top: 4%;
+        margin-bottom: 10%;
+        border: 10px solid black;
+        background-color: hsl(281, 94%, 80%);
+       
+    }
+
+    @media screen and (max-width: 500px) {
+    header .lelel{
+      
+        font-size: 2rem; 
+        font-weight: bold;
+        text-decoration: none;
+       
+      
+        color: rgb(255, 255, 255);
+       
+      }
+    }
+    
+    .form-control{
+        font-size: 1.5rem;
+       
+        
+    }
+    .la{
+        color: rgba(255, 255, 255, 0.664);
+        padding: 0.5%;
+        border-radius: 20%;
+    }
+   
+    .clara{
+        color: rgb(0, 0, 0);
+        
+        font-size: 3.5rem;
+        padding-left: 37%;
+  
+        
+    }
+    #usuariotabla{
+        padding-left: 25%;
+        padding-right: 25%; 
+    }
+  #btnGuardarUsuario{
+    font-size: 2.5rem;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+    #listar{
+        font-size: 2.5rem;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+	.form h1 {
+		color: rgb(8, 8, 8);
+        font-family:'Courier New', Courier, monospace;
+        font-size: 3rem;
+	}
+
+	.form a.btfacebook {
+	    text-decoration: none;
+	    padding: 0.5em;
+	    font-weight: 600;
+	    font-size: 2em;
+	    color: var(--blanco);
+	    background-color: var(--facebook);
+	    border-radius: 6px;
+	    
+  	}
+
+  	.form a.btgmail {
+	    text-decoration: none;
+	    padding: 0.5em;
+	    font-weight: 600;
+	    font-size: 2em;
+	    color: var(--blanco);
+	    background-color: var(--gmail);
+	    border-radius: 6px;
+  	}
+
+  	.form a:hover{
+	    color: var(--hover);
+	    background-color: var(--wine-color);
+  	}
+
+    input {
+        padding: 0.5em;
+        border: grey 0.1em solid;
+        border-radius: 0.8em;
+    }
+
+  	input.ingresar {
+ 	    text-decoration: none;
+	    padding: 0.5em;
+	    font-weight: 600;
+	    font-size: 1.7em;
+	    color: var(--blanco);
+	    background-color: var(--ingresar);
+	    border-radius: 0.5em;		
+  	}
+
+  	input.borrar {
+  		 text-decoration: none;
+	    padding: 0.5em;
+	    font-weight: 600;
+	    font-size: 1.7em;
+	    color: var(--blanco);
+	    background-color: var(--borrar);
+	    border-radius: 0.5em;
+  	}
+
+  	input.ingresar:hover, .borrar:hover {
+	    color: var(--hover);
+	    background-color: var(--wine-color);
+  	}
+
+
+
+  html {
+    font-size: 62.5%;
+}
+  /* Otras media queries para tamaños de pantalla adicionales si es necesario */
+/* Estilos para pantallas más pequeñas, como teléfonos móviles */
+
+    
+
+.d-block{
+    border-color: black;
+    border: 10;
+    border-radius: 20%;
+    height: 600px;
+   
+}
+.img{
+ 
+    width: 100%;
+    height: 120px;
+    
+}
+
+
+/*ELEMENTOS DEL HEADER*/
+
+/* Estilos para pantallas más pequeñas, como tablets */
+
+  
+
+/* Resto de tus estilos ... */
+
+/* Establece la altura fija de 100px para el header */
+header {
+    height: 200px;
+    background-color: var(--fondo);
+    font-size: large;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Ajusta la altura de los elementos internos del header para que se adapten */
+
+
+
+
+/* Resto de tus estilos ... */
+
+#logo-pizza {
+    width: 25%;
+    padding: 1%;
+}
+
+/*CARRITO Y BOTON DE INICIO DE SESION*/
+
+.user-elements {
+  padding: 2%;
+    width:33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px; 
+    color: var(--rojizo);
+}
+
+#carrito {
+    width: 4em;
+    margin-right: 5em;
+}
+
+
+
+.user-elements #log-in {
+ 
+    font-size: 19px; 
+  
+    text-decoration: none;
+    color: var(--rojizo);
+    display: flex;
+    align-items: center;
+}
+
+.linea-header {
+    height: 1em;
+    background-color: rgb(177, 177, 177);
+}
+
+
+/*ELEMENTOS NAVEGADOR DE LA PAGINA*/
+
+nav {
+    background-color: var(--negro-cajas);
+    font-size: large;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--blanco);
+}
+
+nav a:hover {
+    background-color: var(--amarillo);
+    color: black;
+}
+
+
+
+/*-------- CONTENIDO DE LA PAGINA --------------*/
+
+
+.casos {
+    border: 10px solid black;
+    background-color: hsl(290, 94%, 80%);
+    height: 50rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    padding: 0;
+    font-family: 'Segoe UI Light';
+  }
+  .casos p{
+    margin: 3%;
+    text-align: center;
+    color: black;
+    
+}
+.somos p{
+    margin: 13%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    
+}
+.somos{
+    border: 10px solid black;
+    background-color: hsl(281, 94%, 80%);
+   
+    height: 50rem;
+    -ms-flex-align: center; 
+   
+    padding : 0%;
+    font-family: 'Segoe UI Light';
+  
+   flex-direction: row;
+   display: flex;
+   
+}
+           
+.A{
+    width: 50%;
+    height: 80%;
+    margin: 3.5%;
+    background-color: rgba(255, 255, 255, 0.473);
+    
+  
+    border-radius: 10%;
+
+}
+
+.B{
+    width: 50%;
+    height: 80%;
+    margin: 3.5%;
+    background-color: rgba(255, 255, 255, 0.473);
+    
+  
+    border-radius: 10%;
+
+}
+
+.C{
+    width: 50%;
+    height: 80%;
+    margin: 3.5%;
+    background-color: rgba(0, 0, 0, 0.384);
+    
+  
+    border-radius: 10%;
+
+}
+
+.D{
+    width: 50%;
+    height: 80%;
+    margin: 3.5%;
+    background-color: rgba(0, 0, 0, 0.384);
+    
+  
+    border-radius: 10%;
+
+    
+}
+.somos h2 {
+    margin: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    font-size: 35px; /* Ajusta el tamaño de la fuente a tu preferencia */
+    font-weight: bold; /* Puedes usar "bold" o un valor numérico como "700" para hacer el texto más ancho */
+}
+.casos h2 {
+    margin: 20px;
+    text-align: center;
+    color: black;
+    
+  }
+/*ELEMENTOS INTRO*/
+.div.ingreso  {
+    width: 100%;
+    height: 100%;
+    background: var(--blanco);
+    text-align: center;
+    background-image: url(https://ecoinventos.com/wp-content/uploads/2019/01/Comedero-automatico-perros.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.contenido-intro {
+    background-color: var(--negro-transparente);
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-intro h2, .contenido-intro p {
+    color:var(--blanco);
+    font-weight: bold;
+}
+
+.ubicacion{
+    display:flex;
+    align-items: center;
+}
+
+
+ h2 {
+    
+    font-size: 2.8rem;
+}
+p{
+    font-size: 1.8rem;
+    
+}
+.boton{
+    background-color:var(--rojizo);
+    color:var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align:center;
+    border:none;
+    
+}
+
+.boton{
+    width: auto;
+}
+
+.boton:hover{
+    background-color: var(--amarillo);
+    color: black;
+    cursor:pointer;
+}
+
+.ofertas {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ofertas h1 {
+    margin-bottom: 2%;
+    font-family: 'Koulen', 'cursive';
+    font-family: 'Source Code Pro', monospace;
+    text-transform: uppercase;
+    color: var(--blanco);
+    font-size: 240%;
+}
+
+.ofertas-contenido {
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ofertas-contenido h1 {
+    color: var(--negro-cajas);
+    margin: 0;
+    padding: 2% 0 2% 0;
+    background-color: var(--amarillo-fondo);
+    text-align: center;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    font-size: 200%;
+}
+
+.ofertas-contenido p {
+    text-align: center;
+    font-size: 1.7em;
+    margin-bottom: 4%;
+    font-weight: bolder;
+}
+
+.caja_promo {
+    width: 27%;
+    border-radius: 1em;
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);/*pegamos el codigo de la pagina*/
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.767);
+}
+
+.caja_promo div {
+    height: 18em;
+}
+
+
+
+.caja_promo ul {
+    font-size: 1.5em;
+    margin-bottom: 4%;
+    font-weight: bold;
+}
+
+.caja_promo li {
+    margin-bottom: 1%;
+}
+
+
+.boton-promo {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color:var(--rojizo);
+    color:var(--blanco);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    text-align:center;
+    border:none;
+    font-size: medium;
+    display: block;
+}
+
+
+
+/*ELEMENTOS DEL PIE DE PAGINA*/
+
+.footer {
+    background-color: var(--negro-cajas);
+    font-size: var(--tamaño-fuente);
+    font-weight: bold;
+    color: var(--blanco);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.derechos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
